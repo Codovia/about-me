@@ -27,7 +27,7 @@ A beginner-friendly resume and bio-data website built with HTML, CSS, and jQuery
 ## How to Run Locally
 
 ```bash
-cd /home/nandan/Desktop/web_assignment/one
+cd /home/user/Desktop/foldername
 python3 -m http.server 8000
 ```
 
