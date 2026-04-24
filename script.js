@@ -100,6 +100,17 @@ $(document).ready(function () {
         $("table tr").css("background-color", "");
         $(this).css("background-color", "#e3f2fd");
     });
+    function updateAge() {
+        var dob = new Date('2004-08-16');
+        var today = new Date();
+        var diffTime = today - dob;
+        var totalDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+        var years = Math.floor(totalDays / 365.25);
+        var remainingDays = Math.floor(totalDays % 365.25);
+        $('#dynamic-age').text(years + ' Years, ' + remainingDays + ' Days');
+    }
+    updateAge();
+    setInterval(updateAge, 24 * 60 * 60 * 1000);
 });
 function showTime() {
     var now = new Date();
